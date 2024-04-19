@@ -22,12 +22,6 @@
     <header>
       <nav class="navMenu" id="myNavMenu">
         <a href="index.html" id="logoA"><img id="logo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexIcon_roundEdge_4181441409677811.png" alt="Webex logo"></a>
-        <!-- <a class="active" href="index.html">UK</a>
-        <a href="na.html">NA<i>, coming soon</i></a>
-        <a href="india.html">India<i>, coming soon</i></a>
-        <a href="javascript:void(0);" class="icon" onclick="resMenu()">
-          <i class="fas fa-bars"></i>
-        </a>  -->
       </nav>
     </header>
 
@@ -42,7 +36,6 @@
       <i class="fas fa-user"></i> - UK based self-serve demo<br>
       <i class="fas fa-headset"></i> - Demo <b>requires Webex Engage</b><br>
       <i class="fas fa-user-friends"></i> - Has <b>options</b> that <b>require Webex Engage</b><br>
-      <i class="fas fa-video"></i> - Has <b>options</b> that <b>require Webex Assist</b><br>
       <i class="fas fa-globe"></i> - Globally accessible self-serve demo</p>
 
       <!-- DEMO MENU -->
@@ -56,7 +49,7 @@
         <button class="tablinks" onclick="openCity(event, 'fbDemo'); hideChat();">FB Messenger Chat<span class="mobhide"> &nbsp;<i class="fas fa-headset"></i></span></button>
         <!-- <button class="tablinks" onclick="openCity(event, 'appDemo'); hideChat();">In-App Chat<span class="mobhide"> &nbsp;<i class="fas fa-headset"></i></span></button> -->
         <button class="tablinks" onclick="openCity(event, 'instaDemo'); hideChat();">Instagram DM <span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
-        <!-- <button class="tablinks" onclick="openCity(event, 'webexAssist'); hideChat();">Webex Assist Appointment<span class="mobhide"> &nbsp;<i class="fas fa-video"></i></span></button> -->
+        <button class="tablinks" onclick="openCity(event, 'rcsDemo'); hideChat();">RCS Demo<span class="mobhide"> &nbsp;<i class="fas fa-globe"></i></span></button>
         <button class="tablinks" onclick="openCity(event, 'dynamicMenu'); hideChat();">Dynamic Chat Menu<span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
         <button class="tablinks" onclick="openCity(event, 'ivmMenu'); hideChat();">Voice IVM to SMS Chat<span class="mobhide"> &nbsp;<i class="fas fa-user-friends"></i></span></button>
         <button class="tablinks" onclick="openCity(event, 'otpLogin'); hideChat();">OTP Login<span class="mobhide"> &nbsp;<i class="fas fa-user"></i></span></button>
@@ -180,15 +173,19 @@
 			  </div>
       </div> -->
 
-      <!-- <div id="webexAssist" class="tabcontent">
-        <h3>Create a Webex Assist Appointment</h3>
-        <p>Clicking the button below will take you to a demo site in which you can create a Webex Assist appointment.</p>
+      <div id="rcsDemo" class="tabcontent">
+        <h3>RCS Showcase Demo</h3>
+        <p><span id="greyBold">Note: This demo is currently available for Android devices only</span>
+          <br>Scanning the QR Code<span class="mobShow">&nbsp;or tapping</span> the button below will open your default Messaging app with a pre-configured message, just hit send and the demo will start.</p>
         <div class="row">
           <div class="column">
-            <a class="stdButton" href="https://webexassistdemo.imisolutions.repl.co/" target="_blank"><span class="mobhide">Webex Assist &nbsp</span><i class="fas fa-video"></i></a>
+            <img id="qrcode" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/demo_showcase_rcs_4365503598575794.png" alt="RCS QR Code">
+          </div>
+          <div class="column2">
+            <a class="stdButton" href="sms:webex-connect-dcloud@rbm.goog?body=Webex%20CPaaS%20Showcase%20%2D%20RCS.%20Just%20send%20in%20this%20message%20to%20try%20this%20channel." target="_blank"><span class="mobhide">RCS Demo &nbsp</span><i class="far fa-comment-alt"></i></a>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <div id="dynamicMenu" class="tabcontent">
         <h3>Dynamic Chat Demo</h3>
